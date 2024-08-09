@@ -1,0 +1,41 @@
+ Here are some questions students to modify or extend the provided code in one or two lines:
+
+### 1. **Add a New Field to the Signup Process**
+   - **Question**: "Modify the signup process to also collect the user's email address. Ensure that the email address is stored alongside the username and password in the `users` object."
+   - **Hint**: They need to modify the `signup` route and the `users` object.
+
+### 2. **Add a Greeting Message Based on Time of Day**
+   - **Question**: "Update the code to display a different greeting message when a user signs in, depending on whether it’s morning, afternoon, or evening."
+   - **Hint**: They could use the JavaScript `Date` object to check the current time and conditionally display a greeting in the `signin` route.
+
+### 3. **Log All Usernames to the Console When Signing In**
+   - **Question**: "Make a small change to log all usernames currently in the `users` object to the console each time a user signs in."
+   - **Hint**: They should loop over the `users` object and log the keys.
+
+### 4. **Redirect to a Profile Page After Signing In**
+   - **Question**: "Modify the code so that after a user successfully signs in, they are redirected to a `/profile` page instead of staying on the same page."
+   - **Hint**: They should update the `signin` route to use `res.redirect`.
+
+### 5. **Prevent Duplicate Usernames During Signup**
+   - **Question**: "Add a check in the signup process to prevent users from signing up with a username that already exists in the `users` object."
+   - **Hint**: They need to add a conditional check in the `signup` route before adding the user to the `users` object.
+
+### 6. **Add a Logout Confirmation Message**
+   - **Question**: "Modify the logout route to display a confirmation message before the user is logged out."
+   - **Hint**: They need to add a simple HTML confirmation dialog in the logout route.
+
+### 7. **Track Login Attempts**
+   - **Question**: "Modify the code to keep track of how many times each user has attempted to log in and display this count on successful login."
+   - **Hint**: They should add a `loginAttempts` field to each user in the `users` object and increment it each time they attempt to log in.
+
+### 8. **Change the Input Field Type**
+   - **Question**: "Update the input field for the password in the signup and signin forms to use the `password` type, so that the input is hidden."
+   - **Hint**: They should change the input type in the HTML forms.
+
+### 9. **Capitalize Usernames**
+   - **Question**: "Ensure that usernames are stored in lowercase regardless of how they are entered during signup."
+   - **Hint**: They should use `.toLowerCase()` on the `username` before storing it in the `users` object.
+
+### 10. **Delete a User**
+   - **Question**: "Add a route that allows a user to delete their account. This route should remove their username from the `users` object."
+   - **Hint**: They need to create a new route that deletes the key from the `users` object.
